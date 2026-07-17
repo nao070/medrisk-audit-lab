@@ -15,7 +15,13 @@ Requires Python ≥ 3.12 and [uv](https://docs.astral.sh/uv/):
 uv sync                 # install pinned dependencies
 uv run medrisk pipeline # download (SHA-256 verified) → preprocess → split → train baseline
 uv run pytest           # run the test suite (includes split non-overlap checks)
+uv run streamlit run apps/streamlit_app/app.py  # demo UI (Demo LLM Mode, no key)
 ```
+
+Further pipeline stages (all key-free): `train-main`, `ablation`, `explain`,
+`audit`, `llm-cases`, `llm-generate`, `llm-eval` — see
+`docs/ARCHITECTURE.md`. macOS note: if LightGBM fails to load libomp, run
+`scripts/fix_lightgbm_macos.sh` (or `brew install libomp`).
 
 The pipeline downloads the public UCI "Diabetes 130-US Hospitals" dataset
 (CC BY 4.0, 1999–2008), builds the cohort, creates patient-level

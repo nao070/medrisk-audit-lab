@@ -1,0 +1,12 @@
+# Gitleaks configuration.
+# Only vendored, untracked tool/venv directories are excluded; all tracked
+# repository content is always scanned.
+
+[extend]
+useDefault = true
+
+[allowlist]
+paths = [
+    '''^\.venv/''',
+    '''^\.tools/''',
+]

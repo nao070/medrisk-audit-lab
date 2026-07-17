@@ -121,5 +121,5 @@ presenting unvalidated LLM output as medical truth.
 
 ## License
 
-Dataset: CC BY 4.0 (UCI ML Repository; Strack et al., 2014). The code
-license will be chosen before public release.
+Code: [MIT License](LICENSE). Dataset: CC BY 4.0 (UCI ML Repository;
+Strack et al., 2014).

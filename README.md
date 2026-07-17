@@ -90,4 +90,4 @@ LLM出力に含まれる保存済みデモは**決定論的な StubClient が生
 
 ## ライセンス
 
-データセット: CC BY 4.0(UCI ML Repository, Strack et al. 2014)。コードのライセンスは公開前に決定予定です。
+コード: [MIT License](LICENSE)。データセット: CC BY 4.0(UCI ML Repository, Strack et al. 2014)。

@@ -31,8 +31,8 @@ data/processed/
 
 # Local tool binaries (e.g. gitleaks)
 .tools/
-models/
-artifacts/
+/models/
+/artifacts/
 reports/generated/
 logs/
 *.log

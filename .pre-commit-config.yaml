@@ -1,0 +1,28 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-added-large-files
+        args: ["--maxkb=500"]
+      - id: check-yaml
+      - id: check-merge-conflict
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.9.4
+    hooks:
+      - id: ruff
+        args: ["--fix"]
+      - id: ruff-format
+
+  # Secret scan. Requires a local gitleaks binary (brew install gitleaks, or
+  # place it in .tools/). CI runs the same scan, so the guarantee does not
+  # depend on local installation (docs/SECURITY_DESIGN.md).
+  - repo: local
+    hooks:
+      - id: gitleaks
+        name: gitleaks protect (staged)
+        entry: bash -c 'PATH="$PATH:.tools" gitleaks protect --staged --redact -v'
+        language: system
+        pass_filenames: false

@@ -24,9 +24,13 @@ __pycache__/
 .coverage
 htmlcov/
 
-# Data and generated artifacts
+# Data and generated artifacts (split ID lists in data/splits/ ARE committed)
 data/raw/
 data/interim/
+data/processed/
+
+# Local tool binaries (e.g. gitleaks)
+.tools/
 models/
 artifacts/
 reports/generated/

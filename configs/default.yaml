@@ -1,0 +1,30 @@
+# MedRisk Audit Lab — v0.1 pipeline configuration.
+# Changing dataset or split values invalidates committed split lists; see docs/DATA_CARD.md.
+
+dataset:
+  # UCI ML Repository dataset ID 296, CC BY 4.0.
+  url: "https://archive.ics.uci.edu/static/public/296/diabetes+130-us+hospitals+for+years+1999-2008.zip"
+  # Pinned SHA-256 of the downloaded archive. Verified on first acquisition;
+  # a mismatch aborts the pipeline before any processing.
+  sha256: "PENDING_FIRST_VERIFIED_DOWNLOAD"
+  raw_dir: "data/raw"
+  csv_name: "diabetic_data.csv"
+
+preprocessing:
+  version: "v1"
+  processed_dir: "data/processed"
+
+split:
+  seed: 20260717
+  fractions:
+    train: 0.60
+    calibration: 0.10
+    validation: 0.15
+    test: 0.15
+  out_dir: "data/splits/v1"
+
+model:
+  seed: 20260717
+  max_iter: 2000
+
+reports_dir: "reports"

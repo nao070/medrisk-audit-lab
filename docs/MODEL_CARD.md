@@ -1,6 +1,28 @@
-# Model Card — MedRisk Audit Lab main model (draft, v0.2)
+# Model Card — MedRisk Audit Lab main model (v1.0, final)
 
-> Status: draft. Final-test results are added once, at v1.0.
+> Status: final. The final-test evaluation below was executed exactly once,
+> with the model, calibration, threshold, and abstention band all frozen on
+> the validation split beforehand (run manifest: `reports/runs/`, stage
+> `final_test_v1_0`).
+
+## Final-test performance (one-shot; n=15,076 encounters, 10,499 patients, prevalence 0.117)
+
+| Metric | Value | 95% CI (patient bootstrap) |
+|---|---|---|
+| AUROC | 0.688 | [0.674, 0.702] |
+| AUPRC | 0.244 | [0.224, 0.266] |
+| Brier score | 0.098 | [0.093, 0.102] |
+| Recall (threshold 0.16) | 0.384 | [0.358, 0.412] |
+| Specificity | 0.844 | [0.836, 0.852] |
+| Precision | 0.245 | [0.228, 0.263] |
+| F1 | 0.299 | [0.279, 0.320] |
+| ECE | 0.009 | [0.005, 0.015] |
+
+Calibration slope 1.257, intercept 0.516. Abstention (band ±0.015):
+coverage 89.8%, selective F1 0.306. Final-test subgroup audit:
+`reports/final/final_test_subgroups.json`. Validation AUROC was 0.677
+[0.662, 0.690] — the final-test result is consistent with it, indicating
+the validation-based selection did not overfit.
 
 ## Model summary
 

@@ -39,8 +39,9 @@ no asset may show any key, token, or local path containing a username.
 
 ## Japanese and English documentation
 
-- `README.md` (English) is canonical; `README.ja.md` (Japanese) mirrors the
-  opening section, quickstart, results summary, and disclaimers by v1.0.
+- `README.md` (Japanese) is the landing page for the primary audience;
+  `README_EN.md` (English) mirrors the disclaimers, status, quickstart,
+  results summary, and prohibited-uses list. Each links to the other.
 - Design documents remain English-only; the Japanese README links to them.
 - Both READMEs carry the same prohibited-uses list.
 

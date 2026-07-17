@@ -4,7 +4,28 @@
 
 ## Status
 
-Design phase
+v0.1 — data pipeline and baseline model (design documents approved; see
+`docs/IMPLEMENTATION_ROADMAP.md` for what each version contains)
+
+## Quickstart (no API key required)
+
+Requires Python ≥ 3.12 and [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv sync                 # install pinned dependencies
+uv run medrisk pipeline # download (SHA-256 verified) → preprocess → split → train baseline
+uv run pytest           # run the test suite (includes split non-overlap checks)
+```
+
+The pipeline downloads the public UCI "Diabetes 130-US Hospitals" dataset
+(CC BY 4.0, 1999–2008), builds the cohort, creates patient-level
+train/calibration/validation/final-test splits, trains a logistic-regression
+baseline, and writes validation metrics plus a reproducibility manifest to
+`reports/runs/`. See `docs/DATA_CARD.md` for the dataset audit.
+
+Note on data era: the dataset covers US hospitals from 1999–2008; results do
+not generalize to current clinical practice or to present-day Japanese
+healthcare.
 
 ## Purpose
 

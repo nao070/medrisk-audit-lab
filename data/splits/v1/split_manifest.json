@@ -1,0 +1,16 @@
+{
+  "seed": 20260717,
+  "fractions": {
+    "train": 0.6,
+    "calibration": 0.1,
+    "validation": 0.15,
+    "test": 0.15
+  },
+  "patients_per_split": {
+    "train": 41994,
+    "calibration": 6999,
+    "validation": 10498,
+    "test": 10499
+  },
+  "sha256": "da093bcccc4176ea6f27866c3c817ded85d4a15e21fd8b3950ef65e3d89ecfdc"
+}

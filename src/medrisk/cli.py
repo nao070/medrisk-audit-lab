@@ -162,6 +162,12 @@ def cmd_llm_eval(config: AppConfig) -> None:
     run_llm_eval(config)
 
 
+def cmd_final_test(config: AppConfig) -> None:
+    from medrisk.stages.final_test import run_final_test
+
+    run_final_test(config)
+
+
 COMMANDS = {
     "download": cmd_download,
     "preprocess": cmd_preprocess,
@@ -174,7 +180,12 @@ COMMANDS = {
     "llm-cases": cmd_llm_cases,
     "llm-generate": cmd_llm_generate,
     "llm-eval": cmd_llm_eval,
+    "final-test": cmd_final_test,
 }
+
+# `pipeline` never includes final-test: the one-shot final evaluation must
+# always be an explicit, deliberate command.
+PIPELINE_STAGES = ("download", "preprocess", "split", "train-baseline")
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -193,7 +204,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     config = load_config(args.config)
-    stages = list(COMMANDS) if args.command == "pipeline" else [args.command]
+    stages = list(PIPELINE_STAGES) if args.command == "pipeline" else [args.command]
     for stage in stages:
         logger.info("=== stage: %s ===", stage)
         COMMANDS[stage](config)

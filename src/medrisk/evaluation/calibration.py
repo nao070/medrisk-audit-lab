@@ -45,7 +45,8 @@ def expected_calibration_error(
 def calibration_slope_intercept(y_true: np.ndarray, y_prob: np.ndarray) -> dict[str, float]:
     """Logistic recalibration fit: slope 1 / intercept 0 means well calibrated."""
     logit = np.log(np.clip(y_prob, _EPS, 1 - _EPS) / np.clip(1 - y_prob, _EPS, 1 - _EPS))
-    model = LogisticRegression(penalty=None, max_iter=1000)
+    # C=np.inf == unpenalized fit; replaces penalty=None (deprecated in sklearn 1.8)
+    model = LogisticRegression(C=np.inf, max_iter=1000)
     model.fit(logit.reshape(-1, 1), y_true)
     return {
         "slope": float(model.coef_[0][0]),

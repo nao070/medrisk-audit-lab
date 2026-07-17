@@ -41,7 +41,8 @@ The classifier is the *subject under audit*, not the deliverable:
   89.8% coverage with improved selective F1
 - **Quantified LLM constraints** — the LLM explains, never predicts:
   104 versioned cases, validators for eight dimensions, three compared
-  conditions, and **published failure examples**
+  conditions, and **published failure examples** (current stored outputs
+  are deterministic stub simulations, not live-LLM measurements)
 - **Secret-safe CI** — no secrets for fork PRs, zero paid API calls,
   gitleaks in pre-commit, CI, and full history
 

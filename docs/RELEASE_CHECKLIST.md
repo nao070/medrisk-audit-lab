@@ -8,7 +8,11 @@ Items marked (owner) are actions only the repository owner can perform.
 - [ ] `git ls-files | grep -E '^\.env'` returns exactly `.env.example`
 - [ ] gitleaks full-history scan is clean (`.tools/gitleaks git --redact`)
 - [ ] gitleaks working-tree scan is clean (`.tools/gitleaks dir --redact .`)
-- [ ] No file under `data/` except `data/splits/` and `data/llm_eval/` is tracked
+- [ ] No file under `data/` except `data/splits/` and `data/llm_eval/` is
+      tracked — check: `git ls-files | grep '^data/' | grep -vE '^data/(splits|llm_eval)/'`
+      must return nothing (note: patterns must be path-anchored — a bare
+      `models` or `artifacts` pattern would false-positive on
+      `src/medrisk/models/` source files)
 - [ ] `.env.example` contains only variable names and obviously fake values
 
 ## Quality gates

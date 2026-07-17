@@ -99,7 +99,20 @@ recorded here. All v1 encodings are fixed rules, not fitted to data.
 | `gender` | Keep | `Unknown/Invalid` retained as its own category |
 | `age` | Keep | 10-year brackets as provided |
 | `admission_type_id` | Keep | Known at admission; categorical code |
-| `discharge_disposition_id` | **Keep** (non-excluded values; decision confirmed by v0.2 ablation) | Destination is decided at discharge, hence knowable at the prediction point, but may proxy unmeasured severity. v0.2 ablation (`reports/ablation/discharge_disposition.json`): removing it costs 0.028 validation AUROC (0.677 → 0.649) with no leakage mechanism identified (the feature is fixed at discharge, and outcome-defined values 11/13/14/19/20/21 are already excluded from the cohort), so the feature is kept |
+| `discharge_disposition_id` | **Keep** (non-excluded values; decision confirmed by v0.2 ablation) | Destination is decided at discharge, hence knowable at the prediction point, but may proxy unmeasured severity. v0.2 ablation (`reports/ablation/discharge_disposition.json`): removing it costs 0.028 validation AUROC (0.677 → 0.649) with no leakage mechanism identified (the feature is fixed at discharge, and outcome-defined values 11/13/14/19/20/21 are already excluded from the cohort), so the feature is kept. See the note on IDs 9/12/15 below |
+
+**Note on retained disposition IDs 9, 12, 15** (release-audit measurement,
+2026-07-17, official definitions from the archive's `IDS_mapping.csv`):
+ID 9 "Admitted as an inpatient to this hospital" (n=21, 30-day readmission
+rate 42.9%), ID 12 "Still patient or expected to return for outpatient
+services" (n=3, 66.7%), ID 15 "swing-bed transfer" (n=63, 44.4%) show
+elevated rates versus the 11.4% cohort baseline. They are retained because
+each value is determined at the discharge decision (no post-discharge
+information) and planned continuation of care is legitimate predictive
+signal. Limits: together they cover only 87 encounters (0.09% of the
+cohort), below LightGBM's `min_child_samples=50` in most splits, so their
+individual effect on the model is negligible and their rate estimates carry
+wide uncertainty.
 | `admission_source_id` | Keep | Known at admission |
 | `payer_code` | Keep | Known at admission; `?` → `Missing` |
 | `medical_specialty` | Keep | Admitting physician specialty; `?` → `Missing` (~49% missing) |

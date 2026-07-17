@@ -159,6 +159,11 @@ Enforcement:
   executes; the count of final-test evaluations per release must be 1.
 - Reviews of any PR touching `data` or `evaluation` modules check this rule
   (stated in `ACCEPTANCE_CRITERIA.md`).
+- Known limit of the mechanism: the run-once guard checks for the existence
+  of `reports/final/final_test_metrics.json`, so deleting that file would
+  technically allow a rerun. This is a process control, not a cryptographic
+  one — every execution leaves a run manifest, and rerunning the final test
+  outside a new, documented release cycle violates this plan.
 
 ## Feature and missingness handling
 

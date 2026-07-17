@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./secrets/**)",
+      "Read(./credentials/**)",
+      "Read(./**/*.pem)",
+      "Read(./**/*.key)",
+      "Read(./**/service-account*.json)",
+      "Edit(./.env)",
+      "Edit(./.env.*)",
+      "Edit(./secrets/**)",
+      "Edit(./credentials/**)",
+      "Edit(./**/*.pem)",
+      "Edit(./**/*.key)",
+      "Bash(sudo *)",
+      "Bash(git push *)",
+      "Bash(gh repo *)",
+      "Bash(gh pr merge *)",
+      "Bash(docker push *)"
+    ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "failIfUnavailable": true,
+    "filesystem": {
+      "denyRead": [
+        "~/.ssh",
+        "~/.aws",
+        "~/.config/gcloud",
+        "~/.kube",
+        "~/.npmrc",
+        "~/.pypirc",
+        "~/.git-credentials",
+        "~/.netrc"
+      ]
+    }
+  }
+}

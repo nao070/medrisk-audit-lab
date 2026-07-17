@@ -1,0 +1,47 @@
+# Secrets
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+*.pem
+*.key
+service-account*.json
+credentials.json
+
+# Claude Code local-only settings
+.claude/settings.local.json
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Data and generated artifacts
+data/raw/
+data/interim/
+models/
+artifacts/
+reports/generated/
+logs/
+*.log
+
+# Notebooks
+.ipynb_checkpoints/
+
+# IDE and OS
+.DS_Store
+.idea/
+.vscode/
+
+# Build
+build/
+dist/
+*.egg-info/

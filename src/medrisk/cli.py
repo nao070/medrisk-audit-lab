@@ -144,6 +144,24 @@ def cmd_audit(config: AppConfig) -> None:
     run_audit(config)
 
 
+def cmd_llm_cases(config: AppConfig) -> None:
+    from medrisk.stages.llm_eval import run_llm_cases
+
+    run_llm_cases(config)
+
+
+def cmd_llm_generate(config: AppConfig) -> None:
+    from medrisk.stages.llm_eval import run_llm_generate
+
+    run_llm_generate(config)
+
+
+def cmd_llm_eval(config: AppConfig) -> None:
+    from medrisk.stages.llm_eval import run_llm_eval
+
+    run_llm_eval(config)
+
+
 COMMANDS = {
     "download": cmd_download,
     "preprocess": cmd_preprocess,
@@ -153,6 +171,9 @@ COMMANDS = {
     "ablation": cmd_ablation,
     "explain": cmd_explain,
     "audit": cmd_audit,
+    "llm-cases": cmd_llm_cases,
+    "llm-generate": cmd_llm_generate,
+    "llm-eval": cmd_llm_eval,
 }
 
 

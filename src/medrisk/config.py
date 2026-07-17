@@ -1,18 +1,39 @@
 """Configuration loading.
 
-This module is the only place allowed to read configuration sources.
-No secrets exist in v0.1 configuration; when Live LLM Mode arrives (v0.4),
-environment access will also be confined to this module.
+This module is the only place allowed to read configuration sources,
+including environment variables. Key values are returned to the caller and
+must never be logged, stored, or echoed in errors
+(docs/SECURITY_DESIGN.md).
 """
 
 from __future__ import annotations
 
 import hashlib
+import os
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import Any, Literal
 
 import yaml
+
+LLM_MODE_ENV = "MEDRISK_LLM_MODE"
+API_KEY_ENV = "ANTHROPIC_API_KEY"
+
+LLMMode = Literal["demo", "live", "off"]
+
+
+def resolve_llm_mode() -> LLMMode:
+    """LLM mode from the environment; Demo is the key-free default."""
+    value = os.environ.get(LLM_MODE_ENV, "demo").strip().lower()
+    if value not in ("demo", "live", "off"):
+        raise ValueError(f"{LLM_MODE_ENV} must be one of demo/live/off, got: {value!r}")
+    return value  # type: ignore[return-value]
+
+
+def anthropic_api_key() -> str | None:
+    """The locally configured key, or None. Callers must never log it."""
+    key = os.environ.get(API_KEY_ENV, "").strip()
+    return key or None
 
 
 @dataclass(frozen=True)

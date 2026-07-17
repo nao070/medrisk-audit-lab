@@ -1,0 +1,4181 @@
+{
+  "cases": [
+    {
+      "case_id": "v1-0000",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.006,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_medications",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_3_group",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0001",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.112,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "num_medications",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "glyburide",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0002",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.044,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0003",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.055,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "diabetesMed",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "insulin",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0004",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.087,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "age",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "num_medications",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0005",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.104,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "admission_source_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "insulin",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "metformin",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0006",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.037,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_medications",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0007",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.079,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "age",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0008",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.058,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "race",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "metformin",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_medications",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0009",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.146,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_3_group",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0010",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.088,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0011",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.202,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "num_medications",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "number_outpatient",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0012",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.064,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "admission_source_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_procedures",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0013",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.221,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "diag_2_group",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_3_group",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0014",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.04,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "time_in_hospital",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "age",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0015",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.141,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "admission_source_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "race",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0016",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.077,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_medications",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0017",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.061,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "admission_source_id",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "metformin",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_lab_procedures",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0018",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.181,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "admission_source_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0019",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.155,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "age",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0020",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.073,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0021",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.063,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_medications",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0022",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.053,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0023",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.107,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_2_group",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_3_group",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_lab_procedures",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0024",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.146,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "age",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_2_group",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "number_diagnoses",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0025",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.085,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "time_in_hospital",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "A1Cresult",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0026",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.146,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "diag_2_group",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0027",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.185,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "time_in_hospital",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0028",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.014,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "age",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0029",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.161,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "admission_source_id",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0030",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.058,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "payer_code",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "admission_source_id",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0031",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.132,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "metformin",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "number_diagnoses",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0032",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.123,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "admission_source_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0033",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.105,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "time_in_hospital",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "num_medications",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0034",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.119,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "time_in_hospital",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "age",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0035",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.065,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "payer_code",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0036",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.066,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "race",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0037",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.136,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "admission_source_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "time_in_hospital",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0038",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.082,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "metformin",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "admission_source_id",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "number_emergency",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0039",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.059,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "num_medications",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0040",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.261,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "time_in_hospital",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "admission_source_id",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0041",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.032,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "num_lab_procedures",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "diabetesMed",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0042",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.158,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "metformin",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0043",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.042,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "payer_code",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0044",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.056,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "payer_code",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0045",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.092,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "payer_code",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "time_in_hospital",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0046",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.061,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "time_in_hospital",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0047",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.04,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "admission_source_id",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_medications",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0048",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.049,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_medications",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0049",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.185,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "admission_source_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "metformin",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0050",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.129,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_medications",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0051",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.081,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "number_diagnoses",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0052",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.125,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_2_group",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "number_diagnoses",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0053",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.044,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "admission_source_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "time_in_hospital",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0054",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.122,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "age",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_lab_procedures",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0055",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.264,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "admission_source_id",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0056",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.139,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "number_emergency",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0057",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.09,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "num_medications",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "time_in_hospital",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0058",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.098,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "num_medications",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "age",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0059",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.056,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_lab_procedures",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0060",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.038,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "admission_source_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "glimepiride",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0061",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.112,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0062",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.185,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "payer_code",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0063",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.068,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "age",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0064",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.098,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "glimepiride",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0065",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.145,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "admission_source_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "time_in_hospital",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "num_medications",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0066",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.071,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "age",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "num_medications",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0067",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.19,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0068",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.117,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_2_group",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "payer_code",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0069",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.172,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "time_in_hospital",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0070",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.15,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "number_emergency",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0071",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.279,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_2_group",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "insulin",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0072",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.151,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "metformin",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "insulin",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "age",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0073",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.186,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "metformin",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0074",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.073,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0075",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.277,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "glimepiride",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0076",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.196,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_emergency",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0077",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.062,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0078",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.099,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "metformin",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "time_in_hospital",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "payer_code",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0079",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.101,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_3_group",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diabetesMed",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0080",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.091,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "number_diagnoses",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0081",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.123,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "number_emergency",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "payer_code",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0082",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.158,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "number_emergency",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "number_diagnoses",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0083",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.102,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "medical_specialty",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "age",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "num_lab_procedures",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0084",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.091,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "discharge_disposition_id",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "acarbose",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "payer_code",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "A1Cresult",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0085",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.125,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "age",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "payer_code",
+          "rank": 4
+        },
+        {
+          "direction": "decreases",
+          "feature": "metformin",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0086",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.11,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "medical_specialty",
+          "rank": 1
+        },
+        {
+          "direction": "increases",
+          "feature": "num_medications",
+          "rank": 2
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_3_group",
+          "rank": 3
+        },
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "diag_1_group",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0087",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": []
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.104,
+        "risk_band": "typical",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "decreases",
+          "feature": "number_inpatient",
+          "rank": 1
+        },
+        {
+          "direction": "decreases",
+          "feature": "discharge_disposition_id",
+          "rank": 2
+        },
+        {
+          "direction": "decreases",
+          "feature": "number_diagnoses",
+          "rank": 3
+        },
+        {
+          "direction": "decreases",
+          "feature": "diag_1_group",
+          "rank": 4
+        },
+        {
+          "direction": "increases",
+          "feature": "insulin",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0088",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic edge case"
+        ]
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.16,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0089",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic edge case"
+        ]
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.01,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0090",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic edge case"
+        ]
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.97,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0091",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic edge case"
+        ]
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.168,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0092",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic edge case"
+        ]
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.16,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0093",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic edge case"
+        ]
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.01,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0094",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic edge case"
+        ]
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.97,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0095",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic edge case"
+        ]
+      },
+      "corruption": null,
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.168,
+        "risk_band": "abstained",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "number_inpatient",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0096",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic corrupted case"
+        ]
+      },
+      "corruption": "missing_prediction",
+      "prediction": null,
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "time_in_hospital",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0097",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic corrupted case"
+        ]
+      },
+      "corruption": "probability_out_of_range",
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 1.7,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "time_in_hospital",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0098",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic corrupted case"
+        ]
+      },
+      "corruption": "contradictory_abstention",
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.9,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "time_in_hospital",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0099",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic corrupted case"
+        ]
+      },
+      "corruption": "unknown_direction",
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.3,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "sideways",
+          "feature": "time_in_hospital",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0100",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic corrupted case"
+        ]
+      },
+      "corruption": "missing_prediction",
+      "prediction": null,
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "time_in_hospital",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0101",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic corrupted case"
+        ]
+      },
+      "corruption": "probability_out_of_range",
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 1.7,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "time_in_hospital",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0102",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic corrupted case"
+        ]
+      },
+      "corruption": "contradictory_abstention",
+      "prediction": {
+        "abstained": true,
+        "calibrated_probability": 0.9,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "increases",
+          "feature": "time_in_hospital",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "case_id": "v1-0103",
+      "context": {
+        "data_era": "US hospitals 1999-2008",
+        "disclaimer_required": true,
+        "model_type": "LightGBM",
+        "subgroup_caveats": [
+          "synthetic corrupted case"
+        ]
+      },
+      "corruption": "unknown_direction",
+      "prediction": {
+        "abstained": false,
+        "calibrated_probability": 0.3,
+        "risk_band": "elevated",
+        "threshold": 0.16
+      },
+      "top_attributions": [
+        {
+          "direction": "sideways",
+          "feature": "time_in_hospital",
+          "rank": 1
+        }
+      ]
+    }
+  ],
+  "n_cases": 104,
+  "source": "validation-split model outputs and synthetic cases; final test never used",
+  "version": "v1"
+}

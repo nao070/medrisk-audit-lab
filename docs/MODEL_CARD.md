@@ -53,7 +53,27 @@ Top validation features: `number_inpatient` (prior-year inpatient visits),
 not causal or clinical evidence.** Misclassification analysis:
 `reports/explain/error_analysis.json`.
 
-## Known limitations (v0.2)
+## Subgroup audit (v0.3, validation)
+
+Observational audit across `race`, `gender`, `age`; every metric is paired
+with group size and a patient-bootstrap 95% CI
+(`reports/subgroup/validation_subgroups.json`). AUROC is statistically
+indistinguishable across the large race and gender groups (e.g. Caucasian
+0.675 [0.657, 0.692], AfricanAmerican 0.675 [0.642, 0.705]; Female 0.682
+[0.661, 0.702], Male 0.671 [0.650, 0.691]). Groups under 50 patients (e.g.
+gender Unknown/Invalid, n=1) are labeled "insufficient sample for
+conclusions" and no claim is made about them. Missing/unknown categories are
+reported as groups, never imputed.
+
+## Abstention (v0.3)
+
+The system abstains ("no reliable prediction") when the calibrated
+probability lies within ±0.015 of the 0.16 threshold — selected on
+validation by maximizing selective F1 subject to coverage ≥ 0.80. Result:
+coverage 89.7%, selective F1 0.292 vs 0.287 without abstention
+(`reports/abstention/validation_abstention.json`).
+
+## Known limitations (v0.2–v0.3)
 
 - Discrimination is moderate (AUROC ≈ 0.68), consistent with published
   results on this dataset; the project's value is the audit methodology, not

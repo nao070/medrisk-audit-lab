@@ -1,0 +1,248 @@
+{
+  "threshold": 0.16,
+  "rule": "max selective F1 subject to coverage >= 0.8",
+  "selected": {
+    "band": 0.015,
+    "coverage": 0.897025016903313,
+    "abstention_rate": 0.10297498309668696,
+    "selective_f1": 0.29203271735837627,
+    "selective_recall": 0.3485177151120752,
+    "selective_precision": 0.251303441084463,
+    "selective_specificity": 0.8791652642208011,
+    "selective_auroc": 0.6823498445931787,
+    "selective_brier": 0.0886749590694628
+  },
+  "sweep": [
+    {
+      "band": 0.0,
+      "coverage": 1.0,
+      "abstention_rate": 0.0,
+      "selective_f1": 0.28707905421542873,
+      "selective_recall": 0.37468827930174564,
+      "selective_precision": 0.2326751838946961,
+      "selective_specificity": 0.8496890641589565,
+      "selective_auroc": 0.6766527296199059,
+      "selective_brier": 0.09229959626150934
+    },
+    {
+      "band": 0.005,
+      "coverage": 0.9684246112237999,
+      "abstention_rate": 0.03157538877620014,
+      "selective_f1": 0.29157058672815783,
+      "selective_recall": 0.36828478964401296,
+      "selective_precision": 0.24130619168787107,
+      "selective_specificity": 0.8599937392393175,
+      "selective_auroc": 0.679673295677593,
+      "selective_brier": 0.09167526878772467
+    },
+    {
+      "band": 0.01,
+      "coverage": 0.9331981068289384,
+      "abstention_rate": 0.06680189317106155,
+      "selective_f1": 0.2886655499720826,
+      "selective_recall": 0.3538672142368241,
+      "selective_precision": 0.24375294672324374,
+      "selective_specificity": 0.870026740134511,
+      "selective_auroc": 0.6804622976748844,
+      "selective_brier": 0.0900567452904729
+    },
+    {
+      "band": 0.015,
+      "coverage": 0.897025016903313,
+      "abstention_rate": 0.10297498309668696,
+      "selective_f1": 0.29203271735837627,
+      "selective_recall": 0.3485177151120752,
+      "selective_precision": 0.251303441084463,
+      "selective_specificity": 0.8791652642208011,
+      "selective_auroc": 0.6823498445931787,
+      "selective_brier": 0.0886749590694628
+    },
+    {
+      "band": 0.02,
+      "coverage": 0.8607843137254902,
+      "abstention_rate": 0.13921568627450975,
+      "selective_f1": 0.2868552412645591,
+      "selective_recall": 0.3338497288923315,
+      "selective_precision": 0.2514585764294049,
+      "selective_specificity": 0.8878496503496504,
+      "selective_auroc": 0.6813665614014182,
+      "selective_brier": 0.08649020326479201
+    },
+    {
+      "band": 0.025,
+      "coverage": 0.8245436105476673,
+      "abstention_rate": 0.17545638945233266,
+      "selective_f1": 0.2907618697092381,
+      "selective_recall": 0.3302675585284281,
+      "selective_precision": 0.2596975673898751,
+      "selective_specificity": 0.8976270570051823,
+      "selective_auroc": 0.6788535199764284,
+      "selective_brier": 0.0838496365051475
+    },
+    {
+      "band": 0.03,
+      "coverage": 0.7859364435429345,
+      "abstention_rate": 0.21406355645706554,
+      "selective_f1": 0.29442862952419685,
+      "selective_recall": 0.3278985507246377,
+      "selective_precision": 0.26715867158671586,
+      "selective_specificity": 0.9056083650190114,
+      "selective_auroc": 0.6764980093128341,
+      "selective_brier": 0.08134777264391778
+    },
+    {
+      "band": 0.035,
+      "coverage": 0.749290060851927,
+      "abstention_rate": 0.25070993914807305,
+      "selective_f1": 0.29461504227859364,
+      "selective_recall": 0.31980676328502416,
+      "selective_precision": 0.2731023102310231,
+      "selective_specificity": 0.9123121329750175,
+      "selective_auroc": 0.6777365704858661,
+      "selective_brier": 0.07998917738825274
+    },
+    {
+      "band": 0.04,
+      "coverage": 0.7082488167680866,
+      "abstention_rate": 0.2917511832319134,
+      "selective_f1": 0.2906574394463668,
+      "selective_recall": 0.3088235294117647,
+      "selective_precision": 0.27450980392156865,
+      "selective_specificity": 0.9184080646854983,
+      "selective_auroc": 0.6774530614513997,
+      "selective_brier": 0.07797743290005703
+    },
+    {
+      "band": 0.045,
+      "coverage": 0.6696416497633536,
+      "abstention_rate": 0.3303583502366464,
+      "selective_f1": 0.30462863293864373,
+      "selective_recall": 0.31444444444444447,
+      "selective_precision": 0.2954070981210856,
+      "selective_specificity": 0.9250333185251,
+      "selective_auroc": 0.6847593662076115,
+      "selective_brier": 0.0775373368313412
+    },
+    {
+      "band": 0.05,
+      "coverage": 0.624949290060852,
+      "abstention_rate": 0.375050709939148,
+      "selective_f1": 0.3112426035502959,
+      "selective_recall": 0.3195625759416768,
+      "selective_precision": 0.3033448673587082,
+      "selective_specificity": 0.9282660332541568,
+      "selective_auroc": 0.6882083680873231,
+      "selective_brier": 0.07583012431054204
+    },
+    {
+      "band": 0.055,
+      "coverage": 0.5832995267072346,
+      "abstention_rate": 0.4167004732927654,
+      "selective_f1": 0.313597918022121,
+      "selective_recall": 0.32133333333333336,
+      "selective_precision": 0.3062261753494282,
+      "selective_specificity": 0.9306842706614193,
+      "selective_auroc": 0.6902192882230967,
+      "selective_brier": 0.07400325540182587
+    },
+    {
+      "band": 0.06,
+      "coverage": 0.5366463826910074,
+      "abstention_rate": 0.4633536173089926,
+      "selective_f1": 0.3182481751824818,
+      "selective_recall": 0.32392273402674593,
+      "selective_precision": 0.3127690100430416,
+      "selective_specificity": 0.9340583700440529,
+      "selective_auroc": 0.6938131664386566,
+      "selective_brier": 0.07206232174681143
+    },
+    {
+      "band": 0.065,
+      "coverage": 0.4924949290060852,
+      "abstention_rate": 0.5075050709939148,
+      "selective_f1": 0.32794830371567046,
+      "selective_recall": 0.3360927152317881,
+      "selective_precision": 0.32018927444794953,
+      "selective_specificity": 0.9354790419161677,
+      "selective_auroc": 0.6990405777848276,
+      "selective_brier": 0.0702091254979186
+    },
+    {
+      "band": 0.07,
+      "coverage": 0.44550371872887085,
+      "abstention_rate": 0.5544962812711292,
+      "selective_f1": 0.3422939068100359,
+      "selective_recall": 0.35304990757855825,
+      "selective_precision": 0.33217391304347826,
+      "selective_specificity": 0.9365079365079365,
+      "selective_auroc": 0.7083192745161322,
+      "selective_brier": 0.06903252334547694
+    },
+    {
+      "band": 0.075,
+      "coverage": 0.3982420554428668,
+      "abstention_rate": 0.6017579445571333,
+      "selective_f1": 0.3605236656596173,
+      "selective_recall": 0.37763713080168776,
+      "selective_precision": 0.3448940269749518,
+      "selective_specificity": 0.9372230428360414,
+      "selective_auroc": 0.7173190546528803,
+      "selective_brier": 0.06708209345114159
+    },
+    {
+      "band": 0.08,
+      "coverage": 0.35280594996619336,
+      "abstention_rate": 0.6471940500338067,
+      "selective_f1": 0.378132118451025,
+      "selective_recall": 0.41089108910891087,
+      "selective_precision": 0.350210970464135,
+      "selective_specificity": 0.9360199418363108,
+      "selective_auroc": 0.7213115006972238,
+      "selective_brier": 0.0639853036213073
+    },
+    {
+      "band": 0.085,
+      "coverage": 0.3065584854631508,
+      "abstention_rate": 0.6934415145368492,
+      "selective_f1": 0.3974522292993631,
+      "selective_recall": 0.4482758620689655,
+      "selective_precision": 0.35697940503432496,
+      "selective_specificity": 0.9328714763497372,
+      "selective_auroc": 0.7302502594856418,
+      "selective_brier": 0.06259974291823471
+    },
+    {
+      "band": 0.09,
+      "coverage": 0.26707234617985126,
+      "abstention_rate": 0.7329276538201488,
+      "selective_f1": 0.41514726507713884,
+      "selective_recall": 0.4820846905537459,
+      "selective_precision": 0.3645320197044335,
+      "selective_specificity": 0.9291792478726324,
+      "selective_auroc": 0.744030987096757,
+      "selective_brier": 0.06246981288981479
+    },
+    {
+      "band": 0.095,
+      "coverage": 0.22528735632183908,
+      "abstention_rate": 0.774712643678161,
+      "selective_f1": 0.4260731319554849,
+      "selective_recall": 0.5296442687747036,
+      "selective_precision": 0.35638297872340424,
+      "selective_specificity": 0.9214030529392659,
+      "selective_auroc": 0.7508610541639333,
+      "selective_brier": 0.06020854145189076
+    },
+    {
+      "band": 0.1,
+      "coverage": 0.18559837728194725,
+      "abstention_rate": 0.8144016227180527,
+      "selective_f1": 0.4480286738351254,
+      "selective_recall": 0.5813953488372093,
+      "selective_precision": 0.36443148688046645,
+      "selective_specificity": 0.9138339920948617,
+      "selective_auroc": 0.7655152127952937,
+      "selective_brier": 0.060663808195326824
+    }
+  ]
+}

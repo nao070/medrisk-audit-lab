@@ -138,6 +138,12 @@ def cmd_explain(config: AppConfig) -> None:
     run_explain(config)
 
 
+def cmd_audit(config: AppConfig) -> None:
+    from medrisk.stages.audit import run_audit
+
+    run_audit(config)
+
+
 COMMANDS = {
     "download": cmd_download,
     "preprocess": cmd_preprocess,
@@ -146,6 +152,7 @@ COMMANDS = {
     "train-main": cmd_train_main,
     "ablation": cmd_ablation,
     "explain": cmd_explain,
+    "audit": cmd_audit,
 }
 
 

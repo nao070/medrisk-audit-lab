@@ -1,0 +1,1021 @@
+{
+  "policy": {
+    "min_patients_for_conclusions": 50,
+    "note": "Observational audit; metrics are always paired with group size and 95% patient-bootstrap CIs. Missing/unknown categories are groups of their own, never imputed."
+  },
+  "threshold": 0.16,
+  "results": {
+    "race": [
+      {
+        "attribute": "race",
+        "group": "Caucasian",
+        "n_patients": 7752,
+        "n_encounters": 10860,
+        "prevalence": 0.10699815837937385,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.6745096936075328,
+            "ci_low": 0.6570625607890286,
+            "ci_high": 0.6921470937126738,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.21625103991427835,
+            "ci_low": 0.1947895980387479,
+            "ci_high": 0.2393477019617247,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.09129998172072992,
+            "ci_low": 0.08670972753796403,
+            "ci_high": 0.09623954249750409,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.37607573149741824,
+            "ci_low": 0.34540202259816466,
+            "ci_high": 0.404222429466877,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.8478036708599711,
+            "ci_low": 0.8398065502403181,
+            "ci_high": 0.8561229253112033,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.2284370099320439,
+            "ci_low": 0.2092380538376761,
+            "ci_high": 0.24803788112431005,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.2842276422764228,
+            "ci_low": 0.2619359614422229,
+            "ci_high": 0.30676641274392163,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.01042209886703298,
+            "ci_low": 0.005142201279291694,
+            "ci_high": 0.015957228613511246,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "race",
+        "group": "AfricanAmerican",
+        "n_patients": 2003,
+        "n_encounters": 2949,
+        "prevalence": 0.11291963377416073,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.6751143345180042,
+            "ci_low": 0.642247895745478,
+            "ci_high": 0.7049049566910968,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.22262874935714963,
+            "ci_low": 0.18524945550907868,
+            "ci_high": 0.26687044141525584,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.09560156170543903,
+            "ci_low": 0.0871966217672424,
+            "ci_high": 0.10454304550033997,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.3993993993993994,
+            "ci_low": 0.3389788693131133,
+            "ci_high": 0.4591719012133744,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.8356269113149847,
+            "ci_low": 0.8153699035037462,
+            "ci_high": 0.8541616198070536,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.23623445825932504,
+            "ci_low": 0.19999124343257446,
+            "ci_high": 0.27338308993523747,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.29687500000000006,
+            "ci_low": 0.25357674104124417,
+            "ci_high": 0.3393739141226111,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.0030460399929681838,
+            "ci_low": 0.0030094144997017177,
+            "ci_high": 0.016574323509956957,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "race",
+        "group": "Unknown",
+        "n_patients": 268,
+        "n_encounters": 318,
+        "prevalence": 0.1069182389937107,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.650890637945319,
+            "ci_low": 0.5464224598823536,
+            "ci_high": 0.7505342960947631,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.1827169121027233,
+            "ci_low": 0.12066982603774314,
+            "ci_high": 0.28021028021093153,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.0933429354886734,
+            "ci_low": 0.06357156309759616,
+            "ci_high": 0.12305678345298765,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.14705882352941177,
+            "ci_low": 0.030303030303030304,
+            "ci_high": 0.2916920731707317,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.9225352112676056,
+            "ci_low": 0.8843475469658062,
+            "ci_high": 0.9544027202838556,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.18518518518518517,
+            "ci_low": 0.03571428571428571,
+            "ci_high": 0.38104395604395597,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.1639344262295082,
+            "ci_low": 0.03569862155388472,
+            "ci_high": 0.3076923076923077,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.02768686423976619,
+            "ci_low": 0.011345888435826708,
+            "ci_high": 0.06434864230338982,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "race",
+        "group": "Hispanic",
+        "n_patients": 235,
+        "n_encounters": 326,
+        "prevalence": 0.12576687116564417,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.771074026529739,
+            "ci_low": 0.6888129309879882,
+            "ci_high": 0.8469293156443031,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.33389166659239916,
+            "ci_low": 0.23571823102488454,
+            "ci_high": 0.4525329821529218,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.10115960827388083,
+            "ci_low": 0.07104968643555366,
+            "ci_high": 0.129114224358832,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.4146341463414634,
+            "ci_low": 0.24390243902439024,
+            "ci_high": 0.5882352941176471,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.8912280701754386,
+            "ci_low": 0.8472703110842645,
+            "ci_high": 0.9372693726937269,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.3541666666666667,
+            "ci_low": 0.23524509803921573,
+            "ci_high": 0.45454545454545453,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.38202247191011235,
+            "ci_low": 0.2447456594578131,
+            "ci_high": 0.49574209245742085,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.04567560115127818,
+            "ci_low": 0.020121592106955584,
+            "ci_high": 0.08123515564718543,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "race",
+        "group": "Other",
+        "n_patients": 183,
+        "n_encounters": 217,
+        "prevalence": 0.08294930875576037,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.6792294807370185,
+            "ci_low": 0.5437284839650146,
+            "ci_high": 0.7965279469996954,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.17218868581466312,
+            "ci_low": 0.10476818670058363,
+            "ci_high": 0.3506177690949325,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.07384348815654815,
+            "ci_low": 0.0481065864595055,
+            "ci_high": 0.10139546802302149,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.2222222222222222,
+            "ci_low": 0.04756493506493511,
+            "ci_high": 0.42857142857142855,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.9346733668341709,
+            "ci_low": 0.8755616359447005,
+            "ci_high": 0.979381443298969,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.23529411764705882,
+            "ci_low": 0.038461538461538464,
+            "ci_high": 0.5,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.22857142857142856,
+            "ci_low": 0.043478260869565216,
+            "ci_high": 0.4324324324324324,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.011686278408426991,
+            "ci_low": 0.009163361971647889,
+            "ci_high": 0.05354713804432049,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "race",
+        "group": "Asian",
+        "n_patients": 91,
+        "n_encounters": 120,
+        "prevalence": 0.13333333333333333,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.7373798076923077,
+            "ci_low": 0.5969853136629454,
+            "ci_high": 0.8396927035152636,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.31701579418494513,
+            "ci_low": 0.1469408790496853,
+            "ci_high": 0.45904800353977326,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.1081591586550197,
+            "ci_low": 0.06492340913123784,
+            "ci_high": 0.15636018166762716,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.3125,
+            "ci_low": 0.0,
+            "ci_high": 0.5882352941176471,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.9038461538461539,
+            "ci_low": 0.8349472351203039,
+            "ci_high": 0.9619137466307278,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.3333333333333333,
+            "ci_low": 0.0,
+            "ci_high": 0.5,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.3225806451612903,
+            "ci_low": 0.0,
+            "ci_high": 0.5143317972350231,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.03154489601497213,
+            "ci_low": 0.013290040639007116,
+            "ci_high": 0.09403444452579575,
+            "n_bootstrap": 1000.0
+          }
+        }
+      }
+    ],
+    "gender": [
+      {
+        "attribute": "gender",
+        "group": "Female",
+        "n_patients": 5572,
+        "n_encounters": 7930,
+        "prevalence": 0.10794451450189155,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.6823542972950835,
+            "ci_low": 0.6614870085833267,
+            "ci_high": 0.702489764452807,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.22161247550890487,
+            "ci_low": 0.19585382100706408,
+            "ci_high": 0.2520445096706405,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.09168551890845691,
+            "ci_low": 0.08600926477886156,
+            "ci_high": 0.09695267043097643,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.4030373831775701,
+            "ci_low": 0.3649283361033078,
+            "ci_high": 0.4404071540606483,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.8409669211195929,
+            "ci_low": 0.8309447114811249,
+            "ci_high": 0.8515572437895914,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.23469387755102042,
+            "ci_low": 0.21288405354136872,
+            "ci_high": 0.25879900509033904,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.29664660361135,
+            "ci_low": 0.2697753300773169,
+            "ci_high": 0.3250155808387761,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.010193192783904004,
+            "ci_low": 0.004672457589736654,
+            "ci_high": 0.01737819094756468,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "gender",
+        "group": "Male",
+        "n_patients": 4925,
+        "n_encounters": 6859,
+        "prevalence": 0.10905379792972737,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.6706174191013489,
+            "ci_low": 0.6497970946835808,
+            "ci_high": 0.6913037861631555,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.21300083999720318,
+            "ci_low": 0.19115126240035152,
+            "ci_high": 0.23983157757876553,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.09302264932465386,
+            "ci_low": 0.08634116762884288,
+            "ci_high": 0.09887531753591536,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.3422459893048128,
+            "ci_low": 0.3056993215513261,
+            "ci_high": 0.3801999115004425,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.8597610865652103,
+            "ci_low": 0.848463079490127,
+            "ci_high": 0.8711304535332633,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.23000898472596587,
+            "ci_low": 0.2053335185692272,
+            "ci_high": 0.25548080847277327,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.27512090274046214,
+            "ci_low": 0.24753895046895588,
+            "ci_high": 0.30255587799970063,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.003961689633899184,
+            "ci_low": 0.0027803094068132865,
+            "ci_high": 0.013454443074711284,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "gender",
+        "group": "Unknown/Invalid",
+        "n_patients": 1,
+        "n_encounters": 1,
+        "prevalence": 0.0,
+        "conclusive": false,
+        "note": "metrics undefined (single-class group); insufficient sample for conclusions",
+        "metrics": null
+      }
+    ],
+    "age": [
+      {
+        "attribute": "age",
+        "group": "[70-80)",
+        "n_patients": 2618,
+        "n_encounters": 3640,
+        "prevalence": 0.11483516483516483,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.6826431025931172,
+            "ci_low": 0.6524177466032247,
+            "ci_high": 0.7089917413016746,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.2296415304174614,
+            "ci_low": 0.19393465794625733,
+            "ci_high": 0.2701949193166669,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.09684716448472268,
+            "ci_low": 0.08854258793926947,
+            "ci_high": 0.10536452447050093,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.39952153110047844,
+            "ci_low": 0.3450816468340137,
+            "ci_high": 0.45067585247970776,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.8286778398510242,
+            "ci_low": 0.8141873265041979,
+            "ci_high": 0.8428275061393627,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.23226703755215578,
+            "ci_low": 0.19918026493742727,
+            "ci_high": 0.2644024664677367,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.29375549692172387,
+            "ci_low": 0.254568361086766,
+            "ci_high": 0.3290574194052664,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.013654520447419478,
+            "ci_low": 0.0065656524612796585,
+            "ci_high": 0.024628673408979482,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "age",
+        "group": "[60-70)",
+        "n_patients": 2365,
+        "n_encounters": 3216,
+        "prevalence": 0.11069651741293532,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.6617653414001728,
+            "ci_low": 0.6325407382228911,
+            "ci_high": 0.6919651417119539,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.22452515605042678,
+            "ci_low": 0.1936863256499454,
+            "ci_high": 0.2636938811135731,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.09414004377934332,
+            "ci_low": 0.08588328873513948,
+            "ci_high": 0.10245788594919018,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.38202247191011235,
+            "ci_low": 0.32775772025431427,
+            "ci_high": 0.43786127964699395,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.8555944055944056,
+            "ci_low": 0.8404741336960369,
+            "ci_high": 0.8711184992683819,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.24772313296903462,
+            "ci_low": 0.2112003274707484,
+            "ci_high": 0.2827370809531798,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.3005524861878453,
+            "ci_low": 0.2591611366742835,
+            "ci_high": 0.33970861937841007,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.0066086684784380356,
+            "ci_low": 0.003238495844578963,
+            "ci_high": 0.018211294879983686,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "age",
+        "group": "[50-60)",
+        "n_patients": 1955,
+        "n_encounters": 2687,
+        "prevalence": 0.09862299962783774,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.6974338999423524,
+            "ci_low": 0.6552691140661286,
+            "ci_high": 0.7322883747607394,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.234951831954825,
+            "ci_low": 0.17680749107547727,
+            "ci_high": 0.2963201094590173,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.08362206699872339,
+            "ci_low": 0.07279326058044962,
+            "ci_high": 0.09480799306696815,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.3622641509433962,
+            "ci_low": 0.28200000000000003,
+            "ci_high": 0.4304727377431091,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.8860445912469034,
+            "ci_low": 0.86704085726954,
+            "ci_high": 0.904464318775477,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.25806451612903225,
+            "ci_low": 0.2059633005856792,
+            "ci_high": 0.30978804347826083,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.3014128728414443,
+            "ci_low": 0.23886359497359314,
+            "ci_high": 0.35455381821288834,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.008116138429126667,
+            "ci_low": 0.004554634482003064,
+            "ci_high": 0.022385337214896422,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "age",
+        "group": "[80-90)",
+        "n_patients": 1790,
+        "n_encounters": 2545,
+        "prevalence": 0.12220039292730844,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.6313563835146393,
+            "ci_low": 0.5983451132638258,
+            "ci_high": 0.6647454749734574,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.20112115951460782,
+            "ci_low": 0.16900757759640792,
+            "ci_high": 0.24267941611999339,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.1043956744669929,
+            "ci_low": 0.09487048263928022,
+            "ci_high": 0.11477364069148105,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.3633440514469453,
+            "ci_low": 0.31131745612877687,
+            "ci_high": 0.4225839523761067,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.8084153983885407,
+            "ci_low": 0.7898058359307962,
+            "ci_high": 0.8256567915119756,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.2088724584103512,
+            "ci_low": 0.1750914290574302,
+            "ci_high": 0.24587477064220184,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.2652582159624413,
+            "ci_low": 0.2264139209612316,
+            "ci_high": 0.3049944525139929,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.004401241682110106,
+            "ci_low": 0.0032439304087988207,
+            "ci_high": 0.019376605945371446,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "age",
+        "group": "[40-50)",
+        "n_patients": 1044,
+        "n_encounters": 1421,
+        "prevalence": 0.09500351864883885,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.6726283048211508,
+            "ci_low": 0.6173649049943252,
+            "ci_high": 0.7251635086804168,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.203081009453692,
+            "ci_low": 0.15241611533270505,
+            "ci_high": 0.27068294054652897,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.08228572137393499,
+            "ci_low": 0.0707991597768378,
+            "ci_high": 0.09432216422772452,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.34074074074074073,
+            "ci_low": 0.25,
+            "ci_high": 0.4258202050512628,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.8818040435458787,
+            "ci_low": 0.8606584320389581,
+            "ci_high": 0.9031509417163606,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.23232323232323232,
+            "ci_low": 0.17446948830352643,
+            "ci_high": 0.29082291367251123,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.27627627627627627,
+            "ci_low": 0.2083237767584098,
+            "ci_high": 0.3389098173515982,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.008068202151144965,
+            "ci_low": 0.00538514963848274,
+            "ci_high": 0.02367408074685002,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "age",
+        "group": "[30-40)",
+        "n_patients": 429,
+        "n_encounters": 587,
+        "prevalence": 0.0919931856899489,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.7634285317212146,
+            "ci_low": 0.6953109088022813,
+            "ci_high": 0.8209232709281337,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.24398495430323203,
+            "ci_low": 0.15645375196075026,
+            "ci_high": 0.3811579133741673,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.07723598958733383,
+            "ci_low": 0.05721787542035837,
+            "ci_high": 0.09586304675643806,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.48148148148148145,
+            "ci_low": 0.32608695652173914,
+            "ci_high": 0.6166755319148937,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.851782363977486,
+            "ci_low": 0.8116105320671761,
+            "ci_high": 0.8922733863123313,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.24761904761904763,
+            "ci_low": 0.16822037226105396,
+            "ci_high": 0.32328404527199706,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.32704402515723274,
+            "ci_low": 0.2272727272727273,
+            "ci_high": 0.4172612867704892,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.020961027943090224,
+            "ci_low": 0.012704633939615522,
+            "ci_high": 0.04728469071321141,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "age",
+        "group": "[90-100)",
+        "n_patients": 245,
+        "n_encounters": 332,
+        "prevalence": 0.1144578313253012,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.5993555316863587,
+            "ci_low": 0.5082946859322575,
+            "ci_high": 0.6873537641220567,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.19235582666583995,
+            "ci_low": 0.1121205025309509,
+            "ci_high": 0.2879232103213981,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.09990413201826555,
+            "ci_low": 0.0732658413441069,
+            "ci_high": 0.12729754589447662,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.23684210526315788,
+            "ci_low": 0.09297040169133197,
+            "ci_high": 0.3939593301435406,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.8435374149659864,
+            "ci_low": 0.8,
+            "ci_high": 0.8848684210526315,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.16363636363636364,
+            "ci_low": 0.06521739130434782,
+            "ci_high": 0.25,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.19354838709677416,
+            "ci_low": 0.075,
+            "ci_high": 0.2954939243924392,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.01154559277707933,
+            "ci_low": 0.008281221672204693,
+            "ci_high": 0.055197977967769304,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "age",
+        "group": "[20-30)",
+        "n_patients": 171,
+        "n_encounters": 224,
+        "prevalence": 0.09375,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.6493079990616937,
+            "ci_low": 0.528310629392719,
+            "ci_high": 0.7617392487422601,
+            "n_bootstrap": 1000.0
+          },
+          "auprc": {
+            "value": 0.16310159694818827,
+            "ci_low": 0.10164559364277223,
+            "ci_high": 0.35221848555204793,
+            "n_bootstrap": 1000.0
+          },
+          "brier_score": {
+            "value": 0.0842433668645863,
+            "ci_low": 0.05436238025959286,
+            "ci_high": 0.1151959244933095,
+            "n_bootstrap": 1000.0
+          },
+          "recall": {
+            "value": 0.3333333333333333,
+            "ci_low": 0.15384615384615385,
+            "ci_high": 0.526393188854489,
+            "n_bootstrap": 1000.0
+          },
+          "specificity": {
+            "value": 0.8522167487684729,
+            "ci_low": 0.7735828898564748,
+            "ci_high": 0.9250132978723404,
+            "n_bootstrap": 1000.0
+          },
+          "precision": {
+            "value": 0.1891891891891892,
+            "ci_low": 0.09081027667984198,
+            "ci_high": 0.3226043643263757,
+            "n_bootstrap": 1000.0
+          },
+          "f1": {
+            "value": 0.24137931034482757,
+            "ci_low": 0.11538461538461538,
+            "ci_high": 0.3750452898550724,
+            "n_bootstrap": 1000.0
+          },
+          "ece": {
+            "value": 0.028107659332084336,
+            "ci_low": 0.01356418184171706,
+            "ci_high": 0.06591953556028915,
+            "n_bootstrap": 1000.0
+          }
+        }
+      },
+      {
+        "attribute": "age",
+        "group": "[10-20)",
+        "n_patients": 89,
+        "n_encounters": 108,
+        "prevalence": 0.05555555555555555,
+        "conclusive": true,
+        "metrics": {
+          "auroc": {
+            "value": 0.8284313725490196,
+            "ci_low": 0.6816025196486363,
+            "ci_high": 0.9636936936936937,
+            "n_bootstrap": 994.0
+          },
+          "auprc": {
+            "value": 0.2450587606837607,
+            "ci_low": 0.07187500000000001,
+            "ci_high": 0.6970275980099851,
+            "n_bootstrap": 994.0
+          },
+          "brier_score": {
+            "value": 0.04741179187773101,
+            "ci_low": 0.01768886778959838,
+            "ci_high": 0.08187627040395493,
+            "n_bootstrap": 994.0
+          },
+          "recall": {
+            "value": 0.16666666666666666,
+            "ci_low": 0.0,
+            "ci_high": 0.625,
+            "n_bootstrap": 994.0
+          },
+          "specificity": {
+            "value": 0.9411764705882353,
+            "ci_low": 0.8864432989690721,
+            "ci_high": 0.9893812989921613,
+            "n_bootstrap": 994.0
+          },
+          "precision": {
+            "value": 0.14285714285714285,
+            "ci_low": 0.0,
+            "ci_high": 0.5,
+            "n_bootstrap": 994.0
+          },
+          "f1": {
+            "value": 0.15384615384615383,
+            "ci_low": 0.0,
+            "ci_high": 0.5,
+            "n_bootstrap": 994.0
+          },
+          "ece": {
+            "value": 0.02298424039460751,
+            "ci_low": 0.010596804809242372,
+            "ci_high": 0.0698836832674521,
+            "n_bootstrap": 994.0
+          }
+        }
+      },
+      {
+        "attribute": "age",
+        "group": "[0-10)",
+        "n_patients": 28,
+        "n_encounters": 30,
+        "prevalence": 0.0,
+        "conclusive": false,
+        "note": "metrics undefined (single-class group); insufficient sample for conclusions",
+        "metrics": null
+      }
+    ]
+  }
+}

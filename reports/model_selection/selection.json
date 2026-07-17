@@ -1,0 +1,140 @@
+{
+  "main_model": "lgbm_platt",
+  "lgbm_params": {
+    "num_leaves": 31,
+    "learning_rate": 0.05,
+    "n_estimators": 200
+  },
+  "cv_log": [
+    {
+      "params": {
+        "num_leaves": 31,
+        "learning_rate": 0.05,
+        "n_estimators": 200
+      },
+      "cv_auroc_mean": 0.6686839213019679,
+      "cv_auroc": [
+        0.6732555199721814,
+        0.6645406720561062,
+        0.6682555718776162
+      ]
+    },
+    {
+      "params": {
+        "num_leaves": 31,
+        "learning_rate": 0.05,
+        "n_estimators": 400
+      },
+      "cv_auroc_mean": 0.659813276144372,
+      "cv_auroc": [
+        0.6630264750266708,
+        0.6572665527935783,
+        0.659146800612867
+      ]
+    },
+    {
+      "params": {
+        "num_leaves": 31,
+        "learning_rate": 0.1,
+        "n_estimators": 200
+      },
+      "cv_auroc_mean": 0.6583904484840805,
+      "cv_auroc": [
+        0.66140866442935,
+        0.6554219585347776,
+        0.6583407224881138
+      ]
+    },
+    {
+      "params": {
+        "num_leaves": 31,
+        "learning_rate": 0.1,
+        "n_estimators": 400
+      },
+      "cv_auroc_mean": 0.6442390058574453,
+      "cv_auroc": [
+        0.6491319122959461,
+        0.6408414069080695,
+        0.6427436983683205
+      ]
+    },
+    {
+      "params": {
+        "num_leaves": 63,
+        "learning_rate": 0.05,
+        "n_estimators": 200
+      },
+      "cv_auroc_mean": 0.661849268853883,
+      "cv_auroc": [
+        0.6628107820922311,
+        0.6626956401480733,
+        0.6600413843213444
+      ]
+    },
+    {
+      "params": {
+        "num_leaves": 63,
+        "learning_rate": 0.05,
+        "n_estimators": 400
+      },
+      "cv_auroc_mean": 0.6518928731878507,
+      "cv_auroc": [
+        0.6519776959622686,
+        0.6556621550217769,
+        0.6480387685795068
+      ]
+    },
+    {
+      "params": {
+        "num_leaves": 63,
+        "learning_rate": 0.1,
+        "n_estimators": 200
+      },
+      "cv_auroc_mean": 0.6472711062956141,
+      "cv_auroc": [
+        0.6455281112134478,
+        0.6436880477119357,
+        0.6525971599614588
+      ]
+    },
+    {
+      "params": {
+        "num_leaves": 63,
+        "learning_rate": 0.1,
+        "n_estimators": 400
+      },
+      "cv_auroc_mean": 0.6336748597533765,
+      "cv_auroc": [
+        0.6297799018308127,
+        0.6346868673233286,
+        0.6365578101059881
+      ]
+    }
+  ],
+  "calibration_method": "platt",
+  "calibration_scores_validation": {
+    "platt": {
+      "brier": 0.09229959626150934,
+      "ece": 0.007194259190765047
+    },
+    "isotonic": {
+      "brier": 0.09240270897873742,
+      "ece": 0.00374505616152735
+    }
+  },
+  "threshold": {
+    "criterion": "max_f1_on_validation",
+    "selected_threshold": 0.16,
+    "at_selection": {
+      "threshold": 0.16,
+      "precision": 0.2326751838946961,
+      "recall": 0.37468827930174564,
+      "specificity": 0.8496890641589565,
+      "f1": 0.28707905421542873,
+      "flagged_rate": 0.1746450304259635
+    }
+  },
+  "split_sha256": "da093bcccc4176ea6f27866c3c817ded85d4a15e21fd8b3950ef65e3d89ecfdc",
+  "seed": 20260717,
+  "selection_data": "validation split only; final test untouched"
+}

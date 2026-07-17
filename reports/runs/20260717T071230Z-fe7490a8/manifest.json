@@ -1,0 +1,22 @@
+{
+  "calibration_method": "platt",
+  "config_sha256": "666db318b3e9db9daaa4fbd91e0723b76a6fc1f7bccfd8c4aa207ea63c069563",
+  "created_utc": "2026-07-17T07:12:30+00:00",
+  "dataset_sha256": "f82ac129da2ddd2299391ff6fbae3a6a58b3edcf59ac9d7bd480c00fe453112a",
+  "evaluated_split": "validation",
+  "final_test_evaluations": 0,
+  "git_commit": "ba39fa3539c335fe18e05e611b6410c0c93fdc34",
+  "model": "lgbm_uncalibrated",
+  "package_versions": {
+    "numpy": "2.5.1",
+    "pandas": "3.0.3",
+    "pyyaml": "6.0.3",
+    "scikit-learn": "1.9.0"
+  },
+  "preprocessing_version": "v1",
+  "run_id": "20260717T071230Z-fe7490a8",
+  "seed": 20260717,
+  "split_sha256": "da093bcccc4176ea6f27866c3c817ded85d4a15e21fd8b3950ef65e3d89ecfdc",
+  "stage": "train_main_v0_2",
+  "threshold": 0.16
+}

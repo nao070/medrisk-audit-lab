@@ -1,0 +1,20 @@
+{
+  "feature": "discharge_disposition_id",
+  "note": "Discharge destination is known at the prediction point (discharge) but can proxy unmeasured severity; this ablation informs the keep/exclude decision recorded in docs/DATA_CARD.md.",
+  "results": {
+    "with_feature": {
+      "auroc": 0.6766527296199059,
+      "auprc": 0.21707852994510096,
+      "brier_score": 0.20397226332597188,
+      "ece": 0.3209812597048459
+    },
+    "without_feature": {
+      "auroc": 0.6488891622755639,
+      "auprc": 0.1921328366623289,
+      "brier_score": 0.21121841174834652,
+      "ece": 0.3306964941145494
+    }
+  },
+  "delta_auroc_with_minus_without": 0.027763567344341933,
+  "evaluated_split": "validation"
+}

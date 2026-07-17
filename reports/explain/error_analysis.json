@@ -1,0 +1,337 @@
+{
+  "wording": "SHAP values are model attributions on this dataset. They are not causal or clinical evidence.",
+  "threshold": 0.16,
+  "n_cases": 10,
+  "cases": [
+    {
+      "kind": "false_positive",
+      "encounter_id": 164979864,
+      "calibrated_probability": 0.43680552215697543,
+      "label": 0,
+      "top_attributions": [
+        {
+          "feature": "number_inpatient",
+          "direction": "increases",
+          "rank": 1
+        },
+        {
+          "feature": "number_emergency",
+          "direction": "increases",
+          "rank": 2
+        },
+        {
+          "feature": "payer_code",
+          "direction": "decreases",
+          "rank": 3
+        },
+        {
+          "feature": "age",
+          "direction": "decreases",
+          "rank": 4
+        },
+        {
+          "feature": "discharge_disposition_id",
+          "direction": "decreases",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "encounter_id": 172805286,
+      "calibrated_probability": 0.42835619521729146,
+      "label": 0,
+      "top_attributions": [
+        {
+          "feature": "number_inpatient",
+          "direction": "increases",
+          "rank": 1
+        },
+        {
+          "feature": "age",
+          "direction": "increases",
+          "rank": 2
+        },
+        {
+          "feature": "number_emergency",
+          "direction": "increases",
+          "rank": 3
+        },
+        {
+          "feature": "insulin",
+          "direction": "increases",
+          "rank": 4
+        },
+        {
+          "feature": "diag_1_group",
+          "direction": "increases",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "encounter_id": 345462878,
+      "calibrated_probability": 0.41301001387224767,
+      "label": 0,
+      "top_attributions": [
+        {
+          "feature": "number_inpatient",
+          "direction": "increases",
+          "rank": 1
+        },
+        {
+          "feature": "number_emergency",
+          "direction": "increases",
+          "rank": 2
+        },
+        {
+          "feature": "age",
+          "direction": "increases",
+          "rank": 3
+        },
+        {
+          "feature": "diag_1_group",
+          "direction": "increases",
+          "rank": 4
+        },
+        {
+          "feature": "num_medications",
+          "direction": "increases",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "encounter_id": 143247174,
+      "calibrated_probability": 0.39981557895537523,
+      "label": 0,
+      "top_attributions": [
+        {
+          "feature": "number_inpatient",
+          "direction": "increases",
+          "rank": 1
+        },
+        {
+          "feature": "number_emergency",
+          "direction": "increases",
+          "rank": 2
+        },
+        {
+          "feature": "age",
+          "direction": "decreases",
+          "rank": 3
+        },
+        {
+          "feature": "payer_code",
+          "direction": "decreases",
+          "rank": 4
+        },
+        {
+          "feature": "discharge_disposition_id",
+          "direction": "decreases",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "kind": "false_positive",
+      "encounter_id": 172787760,
+      "calibrated_probability": 0.3967825838314394,
+      "label": 0,
+      "top_attributions": [
+        {
+          "feature": "discharge_disposition_id",
+          "direction": "increases",
+          "rank": 1
+        },
+        {
+          "feature": "medical_specialty",
+          "direction": "increases",
+          "rank": 2
+        },
+        {
+          "feature": "diag_2_group",
+          "direction": "increases",
+          "rank": 3
+        },
+        {
+          "feature": "payer_code",
+          "direction": "increases",
+          "rank": 4
+        },
+        {
+          "feature": "number_inpatient",
+          "direction": "decreases",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "encounter_id": 256270362,
+      "calibrated_probability": 0.016453715099651007,
+      "label": 1,
+      "top_attributions": [
+        {
+          "feature": "medical_specialty",
+          "direction": "decreases",
+          "rank": 1
+        },
+        {
+          "feature": "diabetesMed",
+          "direction": "decreases",
+          "rank": 2
+        },
+        {
+          "feature": "number_inpatient",
+          "direction": "decreases",
+          "rank": 3
+        },
+        {
+          "feature": "payer_code",
+          "direction": "decreases",
+          "rank": 4
+        },
+        {
+          "feature": "discharge_disposition_id",
+          "direction": "decreases",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "encounter_id": 59607006,
+      "calibrated_probability": 0.023807148231153468,
+      "label": 1,
+      "top_attributions": [
+        {
+          "feature": "medical_specialty",
+          "direction": "decreases",
+          "rank": 1
+        },
+        {
+          "feature": "diabetesMed",
+          "direction": "decreases",
+          "rank": 2
+        },
+        {
+          "feature": "number_inpatient",
+          "direction": "decreases",
+          "rank": 3
+        },
+        {
+          "feature": "discharge_disposition_id",
+          "direction": "decreases",
+          "rank": 4
+        },
+        {
+          "feature": "admission_source_id",
+          "direction": "decreases",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "encounter_id": 315466322,
+      "calibrated_probability": 0.024673899076527648,
+      "label": 1,
+      "top_attributions": [
+        {
+          "feature": "admission_source_id",
+          "direction": "decreases",
+          "rank": 1
+        },
+        {
+          "feature": "number_diagnoses",
+          "direction": "decreases",
+          "rank": 2
+        },
+        {
+          "feature": "diag_1_group",
+          "direction": "decreases",
+          "rank": 3
+        },
+        {
+          "feature": "number_inpatient",
+          "direction": "decreases",
+          "rank": 4
+        },
+        {
+          "feature": "discharge_disposition_id",
+          "direction": "decreases",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "encounter_id": 98782290,
+      "calibrated_probability": 0.02592585971856086,
+      "label": 1,
+      "top_attributions": [
+        {
+          "feature": "number_inpatient",
+          "direction": "decreases",
+          "rank": 1
+        },
+        {
+          "feature": "discharge_disposition_id",
+          "direction": "decreases",
+          "rank": 2
+        },
+        {
+          "feature": "diag_1_group",
+          "direction": "decreases",
+          "rank": 3
+        },
+        {
+          "feature": "admission_source_id",
+          "direction": "decreases",
+          "rank": 4
+        },
+        {
+          "feature": "number_diagnoses",
+          "direction": "decreases",
+          "rank": 5
+        }
+      ]
+    },
+    {
+      "kind": "false_negative",
+      "encounter_id": 36446694,
+      "calibrated_probability": 0.032921281769472614,
+      "label": 1,
+      "top_attributions": [
+        {
+          "feature": "medical_specialty",
+          "direction": "decreases",
+          "rank": 1
+        },
+        {
+          "feature": "discharge_disposition_id",
+          "direction": "decreases",
+          "rank": 2
+        },
+        {
+          "feature": "number_inpatient",
+          "direction": "decreases",
+          "rank": 3
+        },
+        {
+          "feature": "metformin",
+          "direction": "decreases",
+          "rank": 4
+        },
+        {
+          "feature": "number_diagnoses",
+          "direction": "decreases",
+          "rank": 5
+        }
+      ]
+    }
+  ]
+}

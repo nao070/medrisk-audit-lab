@@ -1,0 +1,181 @@
+{
+  "wording": "SHAP values are model attributions on this dataset. They are not causal or clinical evidence.",
+  "importance": [
+    {
+      "feature": "number_inpatient",
+      "mean_abs_shap": 0.28003826501923956
+    },
+    {
+      "feature": "discharge_disposition_id",
+      "mean_abs_shap": 0.2161924937523125
+    },
+    {
+      "feature": "medical_specialty",
+      "mean_abs_shap": 0.11820008363844123
+    },
+    {
+      "feature": "diag_1_group",
+      "mean_abs_shap": 0.08881820553105362
+    },
+    {
+      "feature": "payer_code",
+      "mean_abs_shap": 0.07789776240249613
+    },
+    {
+      "feature": "diabetesMed",
+      "mean_abs_shap": 0.06529673571876685
+    },
+    {
+      "feature": "number_diagnoses",
+      "mean_abs_shap": 0.06489145110682384
+    },
+    {
+      "feature": "num_medications",
+      "mean_abs_shap": 0.05941227343520064
+    },
+    {
+      "feature": "age",
+      "mean_abs_shap": 0.05397795751884582
+    },
+    {
+      "feature": "admission_source_id",
+      "mean_abs_shap": 0.05190830228287771
+    },
+    {
+      "feature": "time_in_hospital",
+      "mean_abs_shap": 0.048065587927743535
+    },
+    {
+      "feature": "metformin",
+      "mean_abs_shap": 0.04262257668418709
+    },
+    {
+      "feature": "num_lab_procedures",
+      "mean_abs_shap": 0.03888533829969016
+    },
+    {
+      "feature": "diag_2_group",
+      "mean_abs_shap": 0.03703451590141433
+    },
+    {
+      "feature": "number_emergency",
+      "mean_abs_shap": 0.036143611610489554
+    },
+    {
+      "feature": "diag_3_group",
+      "mean_abs_shap": 0.03010319186757952
+    },
+    {
+      "feature": "insulin",
+      "mean_abs_shap": 0.02701093280749127
+    },
+    {
+      "feature": "race",
+      "mean_abs_shap": 0.023333970812177758
+    },
+    {
+      "feature": "glimepiride",
+      "mean_abs_shap": 0.01609305564474361
+    },
+    {
+      "feature": "A1Cresult",
+      "mean_abs_shap": 0.014179691798454956
+    },
+    {
+      "feature": "num_procedures",
+      "mean_abs_shap": 0.014057454417265344
+    },
+    {
+      "feature": "glyburide",
+      "mean_abs_shap": 0.012218665797556604
+    },
+    {
+      "feature": "admission_type_id",
+      "mean_abs_shap": 0.01176148793688899
+    },
+    {
+      "feature": "number_outpatient",
+      "mean_abs_shap": 0.006703285150887664
+    },
+    {
+      "feature": "gender",
+      "mean_abs_shap": 0.005996623929281085
+    },
+    {
+      "feature": "change",
+      "mean_abs_shap": 0.004893114845339555
+    },
+    {
+      "feature": "pioglitazone",
+      "mean_abs_shap": 0.00399359371895615
+    },
+    {
+      "feature": "glipizide",
+      "mean_abs_shap": 0.003446406630006613
+    },
+    {
+      "feature": "rosiglitazone",
+      "mean_abs_shap": 0.002055545395805272
+    },
+    {
+      "feature": "acarbose",
+      "mean_abs_shap": 0.001169540115751241
+    },
+    {
+      "feature": "max_glu_serum",
+      "mean_abs_shap": 0.0007201524285545957
+    },
+    {
+      "feature": "glyburide-metformin",
+      "mean_abs_shap": 0.0007055596881418625
+    },
+    {
+      "feature": "repaglinide",
+      "mean_abs_shap": 0.0004992580683638444
+    },
+    {
+      "feature": "tolazamide",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "miglitol",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "tolbutamide",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "nateglinide",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "glipizide-metformin",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "glimepiride-pioglitazone",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "chlorpropamide",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "metformin-rosiglitazone",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "acetohexamide",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "metformin-pioglitazone",
+      "mean_abs_shap": 0.0
+    },
+    {
+      "feature": "troglitazone",
+      "mean_abs_shap": 0.0
+    }
+  ]
+}

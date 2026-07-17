@@ -120,11 +120,32 @@ def cmd_train_baseline(config: AppConfig) -> None:
     logger.info("Run manifest written to %s", manifest_path)
 
 
+def cmd_train_main(config: AppConfig) -> None:
+    from medrisk.stages.main_model import run_train_main
+
+    run_train_main(config)
+
+
+def cmd_ablation(config: AppConfig) -> None:
+    from medrisk.stages.main_model import run_ablation
+
+    run_ablation(config)
+
+
+def cmd_explain(config: AppConfig) -> None:
+    from medrisk.stages.main_model import run_explain
+
+    run_explain(config)
+
+
 COMMANDS = {
     "download": cmd_download,
     "preprocess": cmd_preprocess,
     "split": cmd_split,
     "train-baseline": cmd_train_baseline,
+    "train-main": cmd_train_main,
+    "ablation": cmd_ablation,
+    "explain": cmd_explain,
 }
 
 
